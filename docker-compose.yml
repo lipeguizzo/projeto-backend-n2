@@ -1,0 +1,7 @@
+services:
+  app:
+    user: root
+    build: .
+    entrypoint: ./.docker/entrypoint.sh
+    ports:
+      - "${PORT}:8080"
